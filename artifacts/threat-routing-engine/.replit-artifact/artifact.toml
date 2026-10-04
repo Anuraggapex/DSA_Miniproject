@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI Threat Routing Engine"
+description = "An interactive security-operations dashboard that visualizes text moderation through a chained hash table, sentiment binary search tree, and priority max-heap, with a moderator queue and a native C implementation view."
+version = "1.0.0"
+id = "artifacts/threat-routing-engine"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24208
+
+[services.development]
+run = "pnpm --filter @workspace/threat-routing-engine run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/threat-routing-engine", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/threat-routing-engine/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24208"
+BASE_PATH = "/"
