@@ -270,3 +270,297 @@
     inset: -1px;
   }
 }
+
+/* Light glass treatment for the Threat Router workbench */
+:root {
+  color-scheme: light;
+  --background: 165 36% 96%;
+  --foreground: 205 28% 19%;
+  --border: 166 20% 84%;
+  --card: 0 0% 100%;
+  --card-foreground: 205 28% 19%;
+  --card-border: 166 20% 84%;
+  --primary: 155 48% 34%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 165 25% 91%;
+  --secondary-foreground: 205 28% 24%;
+  --muted: 165 22% 91%;
+  --muted-foreground: 204 13% 43%;
+  --accent: 164 25% 91%;
+  --accent-foreground: 205 28% 24%;
+  --input: 165 19% 82%;
+  --ring: 155 48% 34%;
+  --button-outline: rgba(30, 74, 64, .14);
+  --badge-outline: rgba(30, 74, 64, .08);
+  --elevate-1: rgba(31, 83, 70, .035);
+  --elevate-2: rgba(31, 83, 70, .07);
+}
+
+body {
+  color: #213640;
+  background: #edf5f2;
+}
+
+.grid-bg {
+  min-height: 100vh;
+  color: #213640 !important;
+  background-color: #edf5f2;
+  background-image:
+    radial-gradient(ellipse at 9% 2%, rgba(160, 224, 202, .38), transparent 34rem),
+    radial-gradient(ellipse at 91% 20%, rgba(194, 219, 243, .40), transparent 36rem),
+    linear-gradient(rgba(45, 89, 79, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 89, 79, .035) 1px, transparent 1px);
+  background-size: auto, auto, 32px 32px, 32px 32px;
+}
+
+.grid-bg > header {
+  border-color: rgba(97, 137, 126, .19) !important;
+  background: rgba(247, 251, 249, .76) !important;
+  box-shadow: 0 4px 24px rgba(31, 71, 61, .055);
+  -webkit-backdrop-filter: blur(18px) saturate(145%);
+  backdrop-filter: blur(18px) saturate(145%);
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, .84) !important;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .61) !important;
+  box-shadow:
+    0 12px 34px rgba(36, 75, 66, .085),
+    0 2px 8px rgba(36, 75, 66, .035),
+    inset 0 1px 0 rgba(255, 255, 255, .94);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  backdrop-filter: blur(22px) saturate(150%);
+}
+
+/* Frost the former charcoal surfaces without changing component behavior. */
+[class*="bg-[#101319]"],
+[class*="bg-[#11151a]"],
+[class*="bg-[#11151b]"] {
+  background-color: rgba(249, 252, 251, .78) !important;
+}
+
+[class*="bg-[#14181e]"],
+[class*="bg-[#15191f]"],
+[class*="bg-[#171b21]"],
+[class*="bg-[#171b22]"] {
+  background-color: rgba(246, 250, 248, .66) !important;
+}
+
+[class*="bg-[#191e24]"],
+[class*="bg-[#1a1e25]"],
+[class*="bg-[#1b2027]"] {
+  background-color: rgba(237, 246, 242, .75) !important;
+}
+
+[class*="bg-[#20252c]"],
+[class*="bg-[#20252d]"],
+[class*="bg-[#20262d]"],
+[class*="bg-[#242a32]"],
+[class*="bg-[#282e36]"] {
+  background-color: rgba(227, 240, 234, .82) !important;
+}
+
+[class*="bg-[#172a21]"],
+[class*="bg-[#183427]"],
+[class*="bg-[#193328]"],
+[class*="bg-[#192820]"],
+[class*="bg-[#1c3a2a]"],
+[class*="bg-[#1d3b2b]"] {
+  background-color: rgba(82, 169, 125, .13) !important;
+}
+
+[class*="bg-[#261d20]"],
+[class*="bg-[#2a1d20]"],
+[class*="bg-[#321f22]"],
+[class*="bg-[#391f22]"],
+[class*="bg-[#3a2527]"] {
+  background-color: rgba(219, 112, 105, .12) !important;
+}
+
+[class*="bg-[#27231c]"],
+[class*="bg-[#302a1c]"],
+[class*="bg-[#332b1d]"],
+[class*="bg-[#39301d]"],
+[class*="bg-[#3a301c]"] {
+  background-color: rgba(221, 179, 79, .15) !important;
+}
+
+/* Rebalance former light-on-dark type for readable dark ink on glass. */
+[class*="text-[#eff2f5]"],
+[class*="text-[#e1e6eb]"],
+[class*="text-[#e2e8ed]"],
+[class*="text-[#dce2e8]"],
+[class*="text-[#dce3e8]"],
+[class*="text-[#d7dde2]"],
+[class*="text-[#d4dbe1]"],
+[class*="text-[#d4d9df]"],
+[class*="text-[#d2d9df]"],
+[class*="text-[#cbd2d8]"],
+[class*="text-[#c1c9d0]"],
+[class*="text-[#c0c8cf]"],
+[class*="text-[#bcc6cd]"],
+[class*="text-[#b5bec7]"],
+[class*="text-[#aeb8c1]"],
+[class*="text-[#aeb7c0]"],
+[class*="text-[#aab4bd]"],
+[class*="text-[#aab3bc]"],
+[class*="text-[#a8b1ba]"],
+[class*="text-[#a3adb6]"] {
+  color: #263b45 !important;
+}
+
+[class*="text-[#9ba5af]"],
+[class*="text-[#9aa5ae]"],
+[class*="text-[#929da8]"],
+[class*="text-[#8e99a4]"],
+[class*="text-[#87929d]"],
+[class*="text-[#87929b]"],
+[class*="text-[#86929d]"],
+[class*="text-[#85919b]"],
+[class*="text-[#82909a]"],
+[class*="text-[#818d97]"],
+[class*="text-[#7f8a95]"],
+[class*="text-[#7e8994]"],
+[class*="text-[#7d8995]"],
+[class*="text-[#7c8993]"],
+[class*="text-[#7c8792]"],
+[class*="text-[#798591]"],
+[class*="text-[#78848f]"],
+[class*="text-[#78848e]"],
+[class*="text-[#77838d]"],
+[class*="text-[#77818c]"],
+[class*="text-[#76818c]"],
+[class*="text-[#75818c]"],
+[class*="text-[#75808a]"],
+[class*="text-[#74818c]"],
+[class*="text-[#74808b]"],
+[class*="text-[#737f89]"],
+[class*="text-[#73808b]"],
+[class*="text-[#718079]"],
+[class*="text-[#707b86]"],
+[class*="text-[#6b7782]"],
+[class*="text-[#687580]"],
+[class*="text-[#68747f]"],
+[class*="text-[#67737e]"],
+[class*="text-[#67727e]"],
+[class*="text-[#65717c]"],
+[class*="text-[#636d77]"],
+[class*="text-[#58636d]"],
+[class*="text-[#53606a]"] {
+  color: #61757e !important;
+}
+
+/* Keep the green, coral, and gold signals, but deepen them for light mode. */
+[class*="text-[#71d8a5]"],
+[class*="text-[#79d8a5]"],
+[class*="text-[#70d69e]"],
+[class*="text-[#72d6a1]"],
+[class*="text-[#6ccc95]"],
+[class*="text-[#72c696]"],
+[class*="text-[#a0e2b8]"],
+[class*="text-[#a0e0ba]"],
+[class*="text-[#93d8ad]"],
+[class*="text-[#8fe0b2]"],
+[class*="text-[#8fddb1]"],
+[class*="text-[#8fc9a7]"],
+[class*="text-[#84dbae]"],
+[class*="text-[#84d6a5]"],
+[class*="text-[#83d5a5]"],
+[class*="text-[#80d5a5]"],
+[class*="text-[#7fd0a0]"],
+[class*="text-[#78d69f]"] {
+  color: #237653 !important;
+}
+
+[class*="text-[#ef9c98]"],
+[class*="text-[#ee9290]"],
+[class*="text-[#e9a09b]"],
+[class*="text-[#e4958f]"],
+[class*="text-[#e48e89]"],
+[class*="text-[#e28b88]"],
+[class*="text-[#e2938f]"],
+[class*="text-[#e2a09e]"],
+[class*="text-[#e17977]"],
+[class*="text-[#df7e79]"] {
+  color: #a84045 !important;
+}
+
+[class*="text-[#e8cb83]"],
+[class*="text-[#e6c979]"],
+[class*="text-[#e2c676]"],
+[class*="text-[#e2c675]"],
+[class*="text-[#e2c174]"],
+[class*="text-[#e2b861]"],
+[class*="text-[#dfbd79]"] {
+  color: #806015 !important;
+}
+
+/* Subtle glass borders on neutral controls; retain semantic signal borders. */
+[class*="border-[#2a3039]"],
+[class*="border-[#2b313a]"],
+[class*="border-[#2c333c]"],
+[class*="border-[#2c333d]"],
+[class*="border-[#2d343d]"],
+[class*="border-[#2e353e]"],
+[class*="border-[#2f3640]"],
+[class*="border-[#303741]"],
+[class*="border-[#343b45]"],
+[class*="border-[#343c45]"],
+[class*="border-[#38414a]"],
+[class*="border-[#38414b]"],
+[class*="border-[#3a414b]"],
+[class*="border-[#414b56]"] {
+  border-color: rgba(105, 144, 133, .24) !important;
+}
+
+[class*="border-[#315d48]"],
+[class*="border-[#315542]"],
+[class*="border-[#32644b]"],
+[class*="border-[#397451]"],
+[class*="border-[#5eaa79]"] {
+  border-color: rgba(44, 132, 90, .35) !important;
+}
+
+[class*="border-[#533638]"],
+[class*="border-[#643b3c]"],
+[class*="border-[#693a3c]"],
+[class*="border-[#704041]"] {
+  border-color: rgba(174, 76, 77, .31) !important;
+}
+
+[class*="border-[#665337]"],
+[class*="border-[#665634]"],
+[class*="border-[#806b37]"],
+[class*="border-[#8a7040]"],
+[class*="border-[#8b7447]"] {
+  border-color: rgba(165, 127, 42, .34) !important;
+}
+
+[class*="text-[#f0fff5]"] {
+  color: #ffffff !important;
+}
+
+.panel svg text[fill="#e5cc7c"] {
+  fill: #806015;
+}
+
+.panel svg text[fill="#bdc6cd"] {
+  fill: #425861;
+}
+
+.panel svg circle[fill="#39301d"] {
+  fill: rgba(221, 179, 79, .18);
+}
+
+.panel svg circle[fill="#20252c"] {
+  fill: rgba(227, 240, 234, .9);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .panel,
+  .grid-bg > header {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
