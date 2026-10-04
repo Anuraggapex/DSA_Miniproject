@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -563,4 +562,20 @@ body {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
+}
+
+:root {
+  --app-font-sans: Georgia, 'Times New Roman', serif;
+  --app-font-serif: Georgia, 'Times New Roman', serif;
+  --app-font-mono: Georgia, 'Times New Roman', serif;
+}
+
+.grid-bg,
+.grid-bg * {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.grid-bg svg text {
+  font-family: Georgia, 'Times New Roman', serif !important;
 }
